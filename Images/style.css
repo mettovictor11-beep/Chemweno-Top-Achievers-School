@@ -109,6 +109,20 @@ nav a {
     color: white;
     text-align: center;
     padding: 20px;
+    width: min(90%, 720px);
+}
+.hero-title {
+    font-size: 42px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 14px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+}
+.hero-subtitle {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
 }
 .cta-button {
     display: inline-block;
@@ -118,4 +132,14 @@ nav a {
     color: white;
     text-decoration: none;
     border-radius: 5px;
+}
+
+@media (max-width: 700px) {
+    .hero-title {
+        font-size: 30px;
+    }
+
+    .hero-subtitle {
+        font-size: 17px;
+    }
 }
