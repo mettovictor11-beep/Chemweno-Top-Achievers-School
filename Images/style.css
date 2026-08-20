@@ -1,0 +1,86 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    padding: 10px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Logo and school name */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-area img {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.logo-area h1 {
+    font-size: 24px;
+}
+
+.logo-area p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+#login-button {
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+@media (max-width: 700px) {
+    header {
+        padding: 10px 4%;
+    }
+
+    .logo-area {
+        width: 100%;
+    }
+
+    .logo-area h1 {
+        font-size: 20px;
+    }
+
+    nav {
+        flex: 1;
+        min-width: 0;
+    }
+
+    nav ul {
+        gap: 12px 18px;
+        flex-wrap: wrap;
+    }
+}
