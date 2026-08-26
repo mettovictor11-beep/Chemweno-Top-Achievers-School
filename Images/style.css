@@ -1,4 +1,4 @@
-/* Basic reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Header */
+
 header {
     padding: 10px 5%;
     display: flex;
@@ -19,7 +19,7 @@ header {
     gap: 15px;
 }
 
-/* Logo and school name */
+
 .logo-area {
     display: flex;
     align-items: center;
@@ -42,7 +42,7 @@ header {
     font-size: 14px;
 }
 
-/* Navigation */
+
 nav ul {
     list-style: none;
     display: flex;
@@ -60,6 +60,7 @@ nav a {
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
+
 }
 
 @media (max-width: 700px) {
@@ -145,8 +146,21 @@ nav a {
     }
 }
 .about-section {
-    padding: 60px 5%;
-    text-align: center;
+    padding: 70px 8%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+
+}
+.about-image {
+    width: 45%;
+    max-width: 500px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    
 }
 .about-section  {
     max-width: 800px;
@@ -161,9 +175,21 @@ nav a {
     line-height: 1.6;
     margin-bottom: 15px;
 }
+@media (max-width: 700px) {
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-image,
+    .about-container {
+        width: 100%;
+        max-width: 500px;
+    }
+}
 .Academics-section {
     padding: 70px 8%;
     text-align: center;
+
 }
 .Academics-section h2 {
     font-size: 32px;
@@ -174,6 +200,17 @@ nav a {
    margin: auto 40px;
    line-height: 1.7;
    
+}
+.Academics-section > img {
+    width: 70%;
+    max-width: 800px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px auto 40px;
+    display: block;
+
+    
 }
 .academic-cards{
     display: flex;
